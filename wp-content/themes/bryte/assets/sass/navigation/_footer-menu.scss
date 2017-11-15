@@ -1,0 +1,29 @@
+.footer-menu {
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -18px;
+		padding-left: 0;
+		list-style: none;
+		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-start;
+			.site-footer.style-2 & {
+				justify-content: center;
+			}
+		}
+		.menu-item {
+			display: flex;
+			padding: 5px 13px;
+			text-transform: uppercase;
+			@include font-size(.75);
+			letter-spacing: .72px;
+			font-weight: 400;
+
+			align-items: flex-start;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}

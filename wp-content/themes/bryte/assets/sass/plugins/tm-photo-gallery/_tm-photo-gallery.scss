@@ -1,0 +1,23 @@
+/* Gallery listings */
+.tm-pg {
+	&_front_gallery {
+		padding: 0;
+		&-grid,
+		&-masonry,
+		&-justify {
+			.tm_pg_gallery-item {
+				&_title,
+				&_description,
+				&_counter,
+				&_default_icon {
+					color: $color__white;
+				}
+				&_link {
+					&:before {
+						background: #000;
+					}
+				}
+			}
+		}
+	}
+} 

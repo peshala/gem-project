@@ -1,0 +1,9 @@
+.site-header.style-4 {
+	.main-navigation {
+		@include media-breakpoint-up(md) {
+			.menu {
+				justify-content: flex-end;
+			}
+		}
+	}
+}

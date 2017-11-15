@@ -1,0 +1,14 @@
+.site-header.style-2 {
+	.header-components {
+		@include media-breakpoint-up(md) {
+			margin-top: 14px;
+		}
+	}
+	.main-navigation {
+		@include media-breakpoint-up(sm) {
+			.menu {
+				margin-top: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.site-header.default {
+	.main-navigation {
+		@include media-breakpoint-up(md) {
+			.menu {
+				justify-content: center;
+			}
+		}
+	}
+}

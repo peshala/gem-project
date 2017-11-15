@@ -1,0 +1,58 @@
+/* cherry-posts */
+
+.jet-posts {
+	.post-thumbnail {
+		margin-bottom: 25px;
+	}
+	.entry-title {
+		margin-bottom: 5px;
+	}
+	.post-meta {
+		@include grid-indent(8px);
+	}
+	.entry-excerpt {
+		margin: 13px 0 22px;
+	}
+}
+
+
+/* Pricing table  */
+
+.pricing-table {
+	padding: 48px 35px;
+	border: 1px solid $color__background-hr;
+	&.featured-table {
+		border: none;
+		box-shadow: $box__shadow_banner;
+	}
+	&__heading {
+		margin-bottom: 20px;
+	}
+	&__title,
+	&__subtitle {
+		margin: 0;
+	}
+	&__price {
+		margin-bottom: 25px;
+		&-suffix {
+			display: block;
+			margin-top: -7px;
+		}
+	}
+	&__features {
+		margin-bottom: 45px;
+	}
+	&-button {
+		@include btn;
+		display: block;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		i {
+			@include font-size(14/16);
+		}
+		&,
+		&:hover {
+			color: $color__white;
+		}
+	}
+}

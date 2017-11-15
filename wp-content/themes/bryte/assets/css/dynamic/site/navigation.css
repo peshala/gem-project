@@ -1,0 +1,32 @@
+/* #Paginations */
+.page-numbers {
+	font-style: $navigation_font_style;
+	font-weight: $navigation_font_weight;
+	font-size: $navigation_font_size{px};
+	line-height: $navigation_line_height;
+	font-family: @font_family( $navigation_font_family );
+	letter-spacing: $navigation_letter_spacing{em};
+	border-color: $regular_accent_color_1;
+}
+
+.page-numbers {
+	color: $regular_text_color;
+}
+
+a.page-numbers:hover,
+.page-numbers.current{
+	color: $regular_link_color;
+}
+
+/* #Breadcrumbs */
+.breadcrumbs__item {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	letter-spacing: $breadcrumbs_letter_spacing{em};
+}
+.breadcrumbs__item-target {
+	color: $regular_link_hover_color;
+}

@@ -1,0 +1,84 @@
+/* #Widget Calendar */
+.widget_calendar caption {
+	color: $regular_accent_color_2;
+}
+.invert .widget_calendar caption {
+	color: $invert_text_color;
+}
+.widget_calendar tbody td:not(.pad) {
+	background-color: @alpha($regular_accent_color_2, 10%);
+	color: $regular_text_color;
+}
+.invert .widget_calendar tbody td:not(.pad) {
+	background-color: @alpha($regular_accent_color_2, 25%);
+	color: $regular_text_color;
+}
+.widget_calendar tbody td a {
+	border: 1px solid $regular_accent_color_3;
+	background-color: $invert_accent_color_1;
+	color: $regular_text_color;
+}
+
+.widget_calendar tbody td a:hover {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+	border-color: $regular_accent_color_1;
+}
+
+.invert .widget_calendar tbody td a {
+	border: 1px solid $invert_accent_color_1;
+	background-color: $invert_accent_color_1;
+	color: $invert_accent_color_2;
+}
+
+.invert .widget_calendar tbody td a:hover {
+	background-color: @alpha($invert_accent_color_1, 25%);
+	color: $invert_accent_color_2;
+	border-color: $invert_accent_color_1;
+}
+
+/* #Widget Tag Cloud */
+.tagcloud a {
+	color: $regular_text_color;
+	font-style: $navigation_font_style;
+	font-weight: $navigation_font_weight;
+	font-size: $navigation_font_size{px} !important;
+	line-height: $navigation_line_height;
+	font-family: @font_family( $navigation_font_family );
+	letter-spacing: $navigation_letter_spacing{em};
+}
+.tagcloud a:hover {
+	color: $regular_link_color;
+}
+.invert .tagcloud a:hover {
+	color: $invert_link_color;
+}
+
+/* #Widget Recent Posts - Comments, Archive */
+.widget_recent_entries a{
+	color: $regular_link_hover_color;
+}
+.widget_recent_entries a:hover {
+	color: $regular_link_color;
+}
+.invert .widget_recent_entries a{
+	color: $invert_link_color;
+}
+.invert .widget_recent_entries a:hover {
+	color: $invert_link_hover_color;
+}
+.widget_recent_entries .post-date:before {
+	color: $regular_accent_color_1;
+}
+.invert .widget_recent_entries .post-date {
+	color: $invert_link_hover_color;
+}
+.invert .widget_recent_entries .post-date:before {
+	color: $invert_accent_color_1;
+}
+.widget_recent_comments .comment-author-link {
+	color: $regular_accent_color_2;
+}
+.invert .widget_recent_comments .comment-author-link {
+	color: $invert_accent_color_2;
+}

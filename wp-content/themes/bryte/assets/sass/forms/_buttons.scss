@@ -1,0 +1,77 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@include btn;
+}
+
+input[type='submit'] {
+	color: $color__white;
+	padding-top: 17px;
+	padding-bottom: 16px;
+}
+
+// General styles
+.btn,
+.elementor-widget-container .elementor-button {
+	text-decoration: none;
+	@include btn;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		outline: 0;
+	}
+	&-fullwidth {
+		width: 100%;
+	}
+	&.btn-default {
+		background-color: transparent;
+		border-color: $color__border-button;
+	}
+}
+
+.btn,
+.btn-defaul,
+.btn-primary,
+.btn-secondary,
+.btn:hover,
+.btn-defaul:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.cta-form_submit,
+.cta-form_submit:hover,
+.cta-button,
+.cta-button:hover,
+.invert .btn,
+.invert .btn-primary,
+.invert .btn-secondary,
+.invert .btn-default,
+.error-404 .btn-secondary 
+.invert .btn:hover,
+.invert .btn-primary:hover,
+.invert .btn-secondary:hover,
+.invert .btn-default:hover,
+.error-404 .btn-secondary:hover {
+	color: $color__white;
+}
+
+.btn-primary,
+.cta-form_submit,
+.cta-button {
+	@include gradient-cover;
+}
+
+.link {
+	display: inline-block;
+	letter-spacing: 0.72px;
+	text-transform: uppercase;
+	@include font-size(.75);
+	line-height: 1.5;
+	font-weight: 600;
+	i {
+		font-size: 14px;
+		line-height: 18px;
+		margin-left: 5px;
+	}
+}

@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+.not-found {
+
+	text-align: center;
+
+	&.error-404 {
+		margin: 150px 0;
+		@include media-breakpoint-up(md) {
+			margin: 230px 0 200px;
+		}
+
+		.btn {
+			margin-top: 35px;
+			letter-spacing: 0;
+		}
+	}
+	&.no-results {
+		margin: 80px 0;
+		@include media-breakpoint-up(md) {
+			margin: 100px 0;
+		}
+	}
+
+	.page-title {
+		margin: 0 0 20px 0;
+		@include media-breakpoint-up(lg) {
+			margin: 0 0 35px 0;
+		}
+	}
+	.search-form {
+		max-width: 800px;
+		margin: 35px auto 0;
+	}
+}
+
+body.error404 {
+	.site-content {
+		max-width: none;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		padding-left: 0;
+		padding-right: 0;
+
+		@include media-breakpoint-up(md) {
+			margin-left: $container-gutter-width;
+			margin-right: $container-gutter-width;
+			margin-bottom: $container-gutter-width;
+		}
+	}
+	.site-content_wrap{
+		background-size: cover;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}

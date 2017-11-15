@@ -1,0 +1,13 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.site-footer .site-info a {
+	color: $invert_text_color;
+}
+.site-footer .site-info a:hover {
+	color: $invert_link_color;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}

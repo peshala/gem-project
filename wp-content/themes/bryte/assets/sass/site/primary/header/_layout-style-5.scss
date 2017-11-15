@@ -1,0 +1,40 @@
+.site-header.style-5 {
+	box-shadow: none;
+	.header-container {
+		@include media-breakpoint-up(sm) {
+			z-index: 90;
+			left: 0;
+			right: 0;
+			position: absolute !important;
+			margin: 25px auto 0;
+
+			&:not(.isStuck) {
+				max-width: calc( 100% - 100px );
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			margin: 50px auto 0;
+
+			&:not(.isStuck) {
+				.header-container_wrap {
+					&:not(.container) {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.main-navigation {
+		@include media-breakpoint-up(sm) {
+			.menu {
+				margin-top: 0;
+			}
+		}
+		@include media-breakpoint-up(md) {
+			.menu {
+				justify-content: center;
+			}
+		}
+	}
+}

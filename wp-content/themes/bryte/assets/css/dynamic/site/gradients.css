@@ -1,0 +1,46 @@
+.gradient-bg,
+.gradient-plane:before,
+.single-timeline_post .timeline_post > .entry-content > p:first-of-type:first-letter,
+.single-post .post > .entry-content > p:first-of-type:first-letter,
+.dropcaps,
+.btn-primary,
+.cta-form_submit,
+.cta-button,
+.tm_pb_slider_with_text_overlay .tm_pb_slide_description:before,
+.cherry-projects-single-post .featured-image a .cover,
+.cherry-projects-single-post .additional-image a .cover,
+.cherry-projects-wrapper .projects-item-instance .featured-image a .cover,
+.projects-ajax-button-wrapper .projects-ajax-button span,
+.projects-ajax-button-wrapper .projects-ajax-button:hover span,
+.cherry-projects-wrapper .hover-content:before,
+.cherry-team.team-wrap.template-grid-boxes .team-listing .team-listing_socials .team-socials_link,
+.cherry-team.team-wrap.template-grid-boxes-2 .team-listing .team-listing_socials .team-socials_link,
+.tm_pb_social_media_follow a.icon,
+.widget_calendar tbody td#today,
+
+.elementor-widget-icon-box.elementor-view-stacked .elementor-icon {
+	background: $gradient_color_1;
+	background: -moz-linear-gradient(45deg, $gradient_color_1 0%, $gradient_color_2 100%);
+	background: -webkit-linear-gradient(45deg, $gradient_color_1 0%,$gradient_color_2 100%);
+	background: linear-gradient(45deg, $gradient_color_1 0%,$gradient_color_2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient_color_1', endColorstr='$gradient_color_2',GradientType=1 );
+}
+
+.btn-primary:before,
+.cta-form_submit:before,
+.cta-button:before,
+.projects-ajax-button-wrapper .projects-ajax-button span:before,
+.cherry-team.team-wrap.template-grid-boxes .team-listing .team-listing_socials .team-socials_link:before,
+.cherry-team.team-wrap.template-grid-boxes-2 .team-listing .team-listing_socials .team-socials_link:before,
+.tm_pb_social_media_follow a.icon:before {
+	background-color: $regular_accent_color_2;
+}
+
+
+.invert.gradient-bg {
+	background: $gradient_color_1;
+	background: -moz-linear-gradient(-45deg, $gradient_color_1 0%, $gradient_color_2 100%);
+	background: -webkit-linear-gradient(-45deg, $gradient_color_1 0%,$gradient_color_2 100%);
+	background: linear-gradient(-45deg, $gradient_color_1 0%,$gradient_color_2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient_color_1', endColorstr='$gradient_color_2',GradientType=1 );
+}

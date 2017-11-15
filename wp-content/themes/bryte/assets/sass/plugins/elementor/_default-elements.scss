@@ -1,0 +1,124 @@
+.inline-btn {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+
+/* icon */
+
+.elementor-icon {
+	.elementor-view-stacked & {
+		padding: .7em;
+		font-size: 40px;
+	}
+}
+
+
+/* social-icon */
+
+.elementor-social-icon {
+	@include font-size(14/16);
+	padding: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.elementor-shape-rounded {
+	.elementor-icon.elementor-social-icon {
+		border-radius: 50%;
+	}
+}
+
+
+/* counter */
+
+.elementor-counter {
+	.elementor-counter-number-wrapper {
+		@include font-size(34/16);
+		margin-bottom: 8px;
+	}
+	.elementor-counter-title {
+		@include font-size(16/16);
+		font-style: italic;
+	}
+}
+
+
+/* button */
+
+.elementor-widget-container {
+	.elementor-button {
+		/* Sizes */
+		// Extra small
+		&.elementor-size-xs {
+			font-size: 80%;
+			padding: $button__indents_xsmall;
+		} // Small
+		&.elementor-size-sm {
+			font-size: 90%;
+			padding: $button__indents_small;
+		} // Medium
+		&.elementor-size-md {
+			padding: $button__indents;
+		} // Large
+		&.elementor-size-lg {
+			font-size: 110%;
+			padding: $button__indents_large;
+		} // Extra large
+		&.elementor-size-xl {
+			font-size: 120%;
+			padding: $button__indents_xlarge;
+		}
+	}
+}
+
+
+/* accordion */
+
+.elementor-accordion {
+	.elementor-accordion-item {
+		overflow: hidden;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		&:first-child {
+			.elementor-accordion-title {
+				padding-top: 0;
+			}
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	.elementor-accordion-title {
+		overflow: hidden;
+		padding: 22px 0;
+		.elementor-accordion-icon .fa {
+			@include nucleo-mini-icon;
+			@include font-size(14/16);
+		}
+		.elementor-accordion-icon .fa:before {
+			content: '\e904';
+		}
+		.elementor-accordion-icon.elementor-accordion-icon-right .fa:before {
+			content: '\e903';
+		}
+		&.active .elementor-accordion-icon .fa:before {
+			content: '\e902';
+		}
+	}
+	.elementor-accordion-content {
+		border: none;
+		margin-top: -10px;
+		padding: 0 0 22px;
+	}
+}
+
+
+/*progress*/
+
+.elementor-progress-wrapper {
+	margin: 10px 0;
+	height: 20px;
+	line-height: 20px;
+}
